@@ -89,8 +89,6 @@ function onListening() {
     ? 'pipe ' + addr
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
-  var x = 1;
-  setTimeout(() => {
-  console.log('mytick ' + x);
-}, 1000);
+
+  console.log('mytick ');
 }
