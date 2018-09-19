@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
     { 
         title: 'Mzansi Forex Academy',
         lessontitle: "Welcome Student",
-        message: 'Learn to earn with us'
+        welcomemessage: 'Learn to earn with us'
     });
 });
 
