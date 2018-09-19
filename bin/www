@@ -4,9 +4,7 @@
  * Module dependencies.
  */
 
-setTimeout(() => {
-  console.log('heloooo');
-}, 0);
+
 
 var app = require('../app');
 var debug = require('debug')('mzansiforexclass:server');
@@ -91,4 +89,8 @@ function onListening() {
     ? 'pipe ' + addr
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
+  var x = 1;
+  setTimeout(() => {
+  console.log('mytick ' + x);
+}, 1000);
 }
