@@ -4,6 +4,8 @@
  * Module dependencies.
  */
 
+var mytimer = require('../mytimer');
+
 var app = require('../app');
 var debug = require('debug')('mzansiforexclass:server');
 var http = require('http');
