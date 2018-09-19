@@ -4,7 +4,9 @@
  * Module dependencies.
  */
 
-var mytimer = require('../mytimer');
+setTimeout(() => {
+  console.log('heloooo');
+}, 0);
 
 var app = require('../app');
 var debug = require('debug')('mzansiforexclass:server');
