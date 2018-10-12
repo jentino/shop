@@ -1,4 +1,12 @@
+#!/usr/bin/env node
 
+/**
+ * Module dependencies.
+ */
+
+
+
+var app = require('../app');
 var debug = require('debug')('mzansiforexclass:server');
 var http = require('http');
 
@@ -7,8 +15,13 @@ var http = require('http');
  */
 
 var port = normalizePort(process.env.PORT || '3000');
+app.set('port', port);
 
-var server = http.createServer();
+/**
+ * Create HTTP server.
+ */
+
+var server = http.createServer(app);
 
 /**
  * Listen on provided port, on all network interfaces.
