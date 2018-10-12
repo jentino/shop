@@ -1,5 +1,5 @@
 
-var debug = require('debug')('mzansiforexclass:server');
+var debug = require('debug');
 var http = require('http');
 
 /**
