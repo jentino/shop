@@ -6,9 +6,14 @@ var logger = require('morgan');
 var expressHbs = require('express-handlebars');
 
 var indexRouter = require('./routes/index');
+const util = require("util");
 // var usersRouter = require('./routes/users');
 
 var app = express();
+
+process.on("uncaughtException", err => {
+  util.log(err.toString());
+});
 
 // view engine setup
 // app.set('views', path.join(__dirname, 'views'));
