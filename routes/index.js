@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
   res.render('index', 
     { 
         title: 'Mzansi Forex Academy',
-        lessontitle: "Welcome Gakusei",
+        lessontitle: "Welcome Gakusei.",
         welcomemessage: 'Learn to earn with us'
     });
 });
