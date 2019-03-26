@@ -17,8 +17,8 @@ process.on("uncaughtException", err => {
 
 // view engine setup
 // app.set('views', path.join(__dirname, 'views'));
-app.engine('handlebars',expressHbs({defaultLayout: 'layout', extname: '.hbs'}));
-app.set('view engine', 'handlebars');
+app.engine('.hbs',expressHbs({defaultLayout: 'layout', extname: '.hbs'}));
+app.set('view engine', '.hbs');
 
 app.use(logger('dev'));
 app.use(express.json());
